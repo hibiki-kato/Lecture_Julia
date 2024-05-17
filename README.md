@@ -1,9 +1,16 @@
 # Welcome to Julia!
 This is a Julia tutorial.
+<details>
+<summary>Language</summary>
+
+[English](https://github.com/hibiki-kato/Lecture_Julia)  
+[日本語](https://github.com/hibiki-kato/Lecture_Julia_ja)
+</details>
+
 <a name="logo"/>
 <div align="center">
 <a href="https://julialang.org/" target="_blank">
-<img src="data/assets/logo.svg" alt="Julia Logo" width="210" height="142"></img>
+<img src="src/assets/logo.svg" alt="Julia Logo" width="210" height="142"></img>
 </a>
 </div>
 
@@ -13,11 +20,13 @@ This is a Julia tutorial.
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_Colab_Notebook_Template.ipynb)
 | Lesson | summary | ja | en |
 |:--------:|---|:----:|:----:|
-| Lesson 1 | introduction | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]() ||
-| Lesson 2 | control flow |  |  |
-| Lesson 3 | data structure | |  |
-| Lesson 4 | modules ||  |
-| Lesson 5 | libraries ||  |
+| Lesson 1 | introduction | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]() | |
+| Lesson 2 | Variables and Data Types | | |
+| Lesson 3 | Functions | | |
+| Lesson 4 | Control Flow |  |  |
+| Lesson 5 | Data Structure | |  |
+| Lesson 6 | modules ||  |
+| Lesson 7 | libraries ||  |
 
 
 # Directory tree
@@ -34,7 +43,12 @@ This is a Julia tutorial.
 
 <dl>
   <dt>auto_pull</dt>
-  <dd>Run this code to make your directory up to date.</dd>
+  <dd>Run this code to make your directory up to date.
+      <li>Windows</li>
+      <pre><code class="language-sh">> .\auto_pull\pull.ps1</code></pre>
+      <li>macOS or Linux</li>
+      <pre><code class="language-sh">$ zsh ./auto_pull/pull.sh</code></pre>
+  </dd>
   <dt>data</dt>
   <dd>Store data files.</dd>
   <dt>src</dt>
@@ -81,12 +95,20 @@ $ julia
 
 julia>
 ```
-Then, press ```]```. Then
+Then, press ```]``` and run the following command to install a package.
 ```sh
 $ (@v1.10) pkg> add <packagename>
 ```
-- PyPlot 
-- DynamicalSystems
-- IJulia
+*e.g.* ```add PyPlot```
+
+In this lesson, we use following packages
+<dl>
+  <li> PyPlot </li>
+  <dd> Graph soft for visualising data.</dd>
+  <li> IJulia </li>
+  <dd> This enables us to use Julia in jupyter lab.</dd>
+  <li> <a href="https://juliadynamics.github.io/DynamicalSystems.jl"> DynamicalSystems </a> </li>
+  <dd> Powerful library for nonlinear dynamics and nonlinear timeseries analysis.
+</dl>
 
 
